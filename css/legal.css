@@ -1,0 +1,23 @@
+.legal {
+  max-width:820px
+}
+.legal h2 {
+  font-size:1.35rem;
+  letter-spacing:-.02em;
+  margin:2.2rem 0 .6rem
+}
+.legal p,.legal li {
+  color:#e2d6f3;
+  line-height:1.75
+}
+.legal ul {
+  padding-left:1.2rem
+}
+.legal a {
+  color:#e7c9ff;
+  text-decoration:underline
+}
+.legal-updated {
+  color:var(--muted);
+  font-size:.85rem
+}

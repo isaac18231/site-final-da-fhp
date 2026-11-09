@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="pt-BR">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Acesse sua conta FHP Fibra para ver seu plano, faturas e solicitações.">
+<title>Entrar na sua conta | FHP Fibra</title>
+<link rel="icon" type="image/svg+xml" href="img/favicon.svg"><link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png"><link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="canonical" href="https://isaac18231.github.io/Site-fhp-tcc/login.html">
+<meta name="theme-color" content="#090612">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="FHP Fibra">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Entrar na sua conta | FHP Fibra">
+<meta property="og:description" content="Acesse sua conta FHP Fibra para ver seu plano, faturas e solicitações.">
+<meta property="og:url" content="https://isaac18231.github.io/Site-fhp-tcc/login.html">
+<meta property="og:image" content="https://isaac18231.github.io/Site-fhp-tcc/img/og-cover.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex">
+<noscript><style>.reveal{opacity:1!important;transform:none!important}</style></noscript>
+<link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/login.css">
+</head>
+<body class="login-body">
+<main class="login-wrap">
+<section class="login-intro"><a class="brand" href="index.html" aria-label="FHP Fibra, início"><img class="brand-mark" src="img/logo-mark.svg" alt="" width="30" height="30"><span>FHP</span> FIBRA</a>
+<div class="intro-text">
+<p class="eyebrow">ÁREA DO CLIENTE</p>
+<h1>Sua conexão, em um só lugar.</h1>
+<p>Veja seu plano, pague faturas e acompanhe suas solicitações.</p>
+<ul class="intro-list">
+<li>Pague suas faturas por Pix, cartão ou boleto</li>
+<li>Abra e acompanhe chamados</li>
+<li>Atualize seus dados</li>
+</ul>
+</div>
+<div class="login-lines" aria-hidden="true">
+</div>
+</section>
+<section class="login-card">
+<a class="back" href="index.html">
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 3L5 8l5 5"/></svg>
+Voltar ao site
+</a>
+
+<!-- TELA DE LOGIN -->
+<div id="login-view">
+<div class="login-title">
+<span class="lock" aria-hidden="true">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+</span>
+<h2>Bem-vindo de volta</h2>
+<p>Entre com seu e-mail e senha.</p>
+</div>
+<form id="login-form" novalidate>
+<label for="usuario">E-mail
+<span class="field">
+<svg class="field-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+<input id="usuario" name="usuario" type="email" required autocomplete="username" placeholder="voce@exemplo.com">
+</span>
+</label>
+<label for="senha">Senha
+<span class="field password-wrap">
+<svg class="field-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+<input id="senha" name="senha" type="password" required autocomplete="current-password" placeholder="Digite sua senha">
+<button type="button" class="show-password" aria-label="Mostrar senha">
+<svg class="eye-open" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8S1 12 1 12z"/><circle cx="12" cy="12" r="3"/></svg>
+<svg class="eye-closed" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="display:none"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94"/><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19"/><path d="m1 1 22 22"/><path d="M14.12 14.12a3 3 0 1 1-4.24-4.24"/></svg>
+</button>
+</span>
+</label>
+<div class="login-options">
+<label class="remember"><input type="checkbox" id="lembrar" name="lembrar" checked> Manter conectado</label>
+<button type="button" class="forgot" id="forgot-link">Esqueceu a senha?</button>
+</div>
+<p class="login-feedback" role="alert" aria-live="polite"></p>
+<button class="btn btn-primary btn-login" type="submit">
+<span class="btn-text">Entrar</span>
+<svg class="btn-spinner" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 2a10 10 0 0 1 10 10" style="animation:spin .7s linear infinite;transform-origin:center"/></svg>
+</button>
+<a class="text-action" id="create-account-link" href="cadastro.html">Criar conta</a>
+</form>
+</div>
+
+<!-- TELA DE RECUPERAÇÃO DE SENHA -->
+<div id="reset-view" hidden>
+<div class="login-title">
+<span class="lock" aria-hidden="true">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0 3 3L22 7l-3-3m-3.5 3.5L19 4"/></svg>
+</span>
+<h2>Recuperar senha</h2>
+<p>Informe seu e-mail para receber o código.</p>
+</div>
+
+<div class="reset-step" id="step-email">
+<form id="reset-email-form" novalidate>
+<label for="reset-email">E-mail da conta
+<span class="field">
+<svg class="field-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+<input id="reset-email" name="email" type="email" required autocomplete="email" placeholder="voce@exemplo.com">
+</span>
+</label>
+<p class="login-feedback" role="alert" aria-live="polite"></p>
+<button class="btn btn-primary btn-login" type="submit"><span class="btn-text">Enviar código</span></button>
+</form>
+<button type="button" class="text-action" id="back-to-login">Voltar ao login</button>
+</div>
+
+<div class="reset-step" id="step-code" hidden>
+<div class="demo-email">
+<p><strong>Seu código de verificação</strong></p>
+<code id="demo-code"></code>
+<small>Enquanto o envio por e-mail não está ativado, o código aparece aqui. Digite-o abaixo com a nova senha.</small>
+</div>
+<form id="reset-code-form" novalidate>
+<label for="reset-code-input">Código de 6 dígitos
+<span class="field">
+<svg class="field-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/><circle cx="12" cy="16" r="1"/></svg>
+<input id="reset-code-input" name="code" required inputmode="numeric" maxlength="6" placeholder="000000" autocomplete="one-time-code">
+</span>
+</label>
+<label for="new-password">Nova senha
+<span class="field password-wrap">
+<svg class="field-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+<input id="new-password" name="nova_senha" type="password" required minlength="8" autocomplete="new-password" placeholder="Mínimo 8 caracteres">
+<div class="strength-bar"><div class="strength-fill" id="reset-strength-fill"></div></div>
+<button type="button" class="show-password" aria-label="Mostrar senha">
+<svg class="eye-open" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8S1 12 1 12z"/><circle cx="12" cy="12" r="3"/></svg>
+<svg class="eye-closed" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="display:none"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94"/><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19"/><path d="m1 1 22 22"/><path d="M14.12 14.12a3 3 0 1 1-4.24-4.24"/></svg>
+</button>
+</span>
+</label>
+<label for="confirm-password">Confirmar nova senha
+<span class="field password-wrap">
+<svg class="field-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+<input id="confirm-password" name="confirmar" type="password" required minlength="8" autocomplete="new-password" placeholder="Repita a nova senha">
+</span>
+</label>
+<p class="login-feedback" role="alert" aria-live="polite"></p>
+<button class="btn btn-primary btn-login" type="submit"><span class="btn-text">Redefinir senha</span></button>
+</form>
+<button type="button" class="text-action" id="back-to-login-2">Voltar ao login</button>
+</div>
+
+<div class="reset-step" id="step-success" hidden>
+<div class="success-box">
+<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#6ee7a0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m22 4-10 10-3-3"/></svg>
+<h3>Senha redefinida!</h3>
+<p>Sua senha foi alterada com sucesso. Agora você pode entrar com a nova senha.</p>
+</div>
+<button type="button" class="btn btn-primary btn-login" id="go-to-login"><span class="btn-text">Ir para o login</span></button>
+</div>
+</div>
+</section>
+</main><script src="js/config.js"></script><script src="js/dados.js"></script><script src="js/demo.js"></script><script src="js/fhp.js"></script><script src="js/whatsapp.js"></script><script src="js/login.js"></script>
+</body>
+</html>

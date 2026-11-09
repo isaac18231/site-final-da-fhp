@@ -1,0 +1,19 @@
+{
+  "name": "fhp-fibra",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Site FHP Fibra: área do cliente, painel, assistente, pagamentos Mercado Pago e banco de dados (TiDB/MySQL ou SQLite)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node testes.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.11.5"
+  }
+}

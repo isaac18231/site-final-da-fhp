@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" font-family="Arial,Helvetica,sans-serif">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0L10 5 0 10z" fill="#6b5f7d"/></marker>
+    <linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#7c3aed"/><stop offset="1" stop-color="#c177ff"/></linearGradient>
+  </defs>
+  <rect width="1200" height="640" fill="#ffffff"/>
+  <text x="600" y="40" text-anchor="middle" font-size="24" font-weight="700" fill="#1a1226">Arquitetura do site FHP Fibra</text>
+
+  <!-- Navegador -->
+  <rect x="40" y="80" width="380" height="500" rx="16" fill="#f4effb" stroke="#c9b6e6"/>
+  <text x="230" y="110" text-anchor="middle" font-size="16" font-weight="700" fill="#4c2a85">NAVEGADOR DO CLIENTE</text>
+  <text x="230" y="130" text-anchor="middle" font-size="12" fill="#6b5f7d">Cloudflare Pages / GitHub Pages (estático)</text>
+  <g font-size="13" fill="#1a1226">
+    <rect x="60" y="150" width="340" height="44" rx="8" fill="#fff" stroke="#c9b6e6"/><text x="230" y="177" text-anchor="middle">Páginas HTML/CSS (Home, Planos, Checkout, Painel…)</text>
+    <rect x="60" y="204" width="165" height="44" rx="8" fill="#fff" stroke="#c9b6e6"/><text x="142" y="231" text-anchor="middle">js/dados.js</text>
+    <rect x="235" y="204" width="165" height="44" rx="8" fill="#fff" stroke="#c9b6e6"/><text x="317" y="231" text-anchor="middle">js/config.js</text>
+    <rect x="60" y="258" width="340" height="44" rx="8" fill="#fff" stroke="#c9b6e6"/><text x="230" y="285" text-anchor="middle">js/fhp.js — contas, planos, pedidos, chamados</text>
+    <rect x="60" y="312" width="165" height="44" rx="8" fill="#fff" stroke="#c9b6e6"/><text x="142" y="339" text-anchor="middle">js/checkout.js</text>
+    <rect x="235" y="312" width="165" height="44" rx="8" fill="#fff" stroke="#c9b6e6"/><text x="317" y="339" text-anchor="middle">js/painel.js</text>
+    <rect x="60" y="366" width="165" height="44" rx="8" fill="#fff" stroke="#c9b6e6"/><text x="142" y="393" text-anchor="middle">js/bot.js (assistente)</text>
+    <rect x="235" y="366" width="165" height="44" rx="8" fill="#fff" stroke="#c9b6e6"/><text x="317" y="393" text-anchor="middle">js/whatsapp.js</text>
+    <rect x="60" y="430" width="340" height="60" rx="8" fill="#fff7e6" stroke="#f0c36d"/>
+    <text x="230" y="454" text-anchor="middle" font-weight="700">localStorage (protótipo)</text>
+    <text x="230" y="474" text-anchor="middle" font-size="11" fill="#6b5f7d">clientes · sessão · pedidos · chamados (vai para o banco)</text>
+    <text x="230" y="530" text-anchor="middle" font-size="12" fill="#6b5f7d">Segurança no cliente: validação CPF/Luhn, escape de HTML,</text>
+    <text x="230" y="548" text-anchor="middle" font-size="12" fill="#6b5f7d">cartão nunca gravado, CSP aplicada pelo servidor</text>
+  </g>
+
+  <!-- Servidor -->
+  <rect x="470" y="80" width="340" height="340" rx="16" fill="#eef2ff" stroke="#b4c0f5"/>
+  <text x="640" y="110" text-anchor="middle" font-size="16" font-weight="700" fill="#2b3a8f">SERVIDOR NODE.JS</text>
+  <text x="640" y="130" text-anchor="middle" font-size="12" fill="#6b5f7d">Render (gratuito) · server.js + servidor/pagamentos.js</text>
+  <g font-size="13" fill="#1a1226">
+    <rect x="490" y="150" width="300" height="44" rx="8" fill="#fff" stroke="#b4c0f5"/><text x="640" y="177" text-anchor="middle">POST /api/chat — assistente com IA</text>
+    <rect x="490" y="204" width="300" height="44" rx="8" fill="#fff" stroke="#b4c0f5"/><text x="640" y="231" text-anchor="middle">POST /api/pagamentos/preferencia</text>
+    <rect x="490" y="258" width="300" height="44" rx="8" fill="#fff" stroke="#b4c0f5"/><text x="640" y="285" text-anchor="middle">POST /api/pagamentos/status</text>
+    <rect x="490" y="312" width="300" height="44" rx="8" fill="#fff" stroke="#b4c0f5"/><text x="640" y="339" text-anchor="middle">POST /api/pagamentos/webhook (HMAC)</text>
+    <text x="640" y="385" text-anchor="middle" font-size="11" fill="#6b5f7d">Access Token e chave da IA só aqui (.env) · preço vem da tabela</text>
+    <text x="640" y="402" text-anchor="middle" font-size="11" fill="#6b5f7d">rate limit por IP · CORS por origem · cabeçalhos de segurança</text>
+  </g>
+
+  <!-- Backend/banco -->
+  <rect x="470" y="440" width="340" height="140" rx="16" fill="#ecfdf3" stroke="#9fd8b4"/>
+  <text x="640" y="470" text-anchor="middle" font-size="16" font-weight="700" fill="#1d6b3a">API REST (servidor/api.js) + BANCO (TiDB / MySQL)</text>
+  <g font-size="12" fill="#1a1226">
+    <text x="640" y="498" text-anchor="middle">auth (JWT, bcrypt) · clientes · pedidos · chamados · equipe · demo</text>
+    <text x="640" y="520" text-anchor="middle" fill="#6b5f7d">Persistência real · SQLite local para desenvolver sem internet</text>
+    <text x="640" y="555" text-anchor="middle" font-size="11" fill="#6b5f7d">TiDB Cloud Serverless · região São Paulo · gratuito até 5 GB</text>
+  </g>
+
+  <!-- Externos -->
+  <g font-size="13" fill="#1a1226">
+    <rect x="880" y="100" width="280" height="70" rx="12" fill="#fff" stroke="#c9b6e6"/><text x="1020" y="130" text-anchor="middle" font-weight="700">Anthropic API</text><text x="1020" y="152" text-anchor="middle" font-size="11" fill="#6b5f7d">respostas do assistente com contexto</text>
+    <rect x="880" y="200" width="280" height="90" rx="12" fill="#fff" stroke="#c9b6e6"/><text x="1020" y="230" text-anchor="middle" font-weight="700">Mercado Pago (Checkout Pro)</text><text x="1020" y="252" text-anchor="middle" font-size="11" fill="#6b5f7d">Pix · cartão · boleto · sandbox</text><text x="1020" y="272" text-anchor="middle" font-size="11" fill="#6b5f7d">guarda os pagamentos; webhook avisa o servidor</text>
+    <rect x="880" y="320" width="280" height="60" rx="12" fill="#fff" stroke="#c9b6e6"/><text x="1020" y="346" text-anchor="middle" font-weight="700">ViaCEP</text><text x="1020" y="366" text-anchor="middle" font-size="11" fill="#6b5f7d">CEP → bairro · chamado direto pelo navegador</text>
+    <rect x="880" y="410" width="280" height="60" rx="12" fill="#fff" stroke="#c9b6e6"/><text x="1020" y="436" text-anchor="middle" font-weight="700">WhatsApp (wa.me)</text><text x="1020" y="456" text-anchor="middle" font-size="11" fill="#6b5f7d">contato, propostas, suporte · aberto pelo navegador</text>
+  </g>
+
+  <!-- Setas -->
+  <g stroke="#6b5f7d" stroke-width="2" fill="none" marker-end="url(#a)">
+    <path d="M420 230 H470"/>
+    <path d="M420 330 H470"/>
+    <path d="M640 420 V440"/>
+    <path d="M810 172 H880"/>
+    <path d="M810 245 H880"/>
+    <path d="M230 80 V62 H1180 V350 H1162" stroke-dasharray="6 5"/>
+  </g>
+  <g font-size="11" fill="#6b5f7d">
+    <text x="445" y="222" text-anchor="middle">fetch JSON</text>
+    <text x="845" y="165" text-anchor="middle">HTTPS</text>
+    <text x="845" y="238" text-anchor="middle">HTTPS</text>
+    <text x="620" y="57" text-anchor="middle">navegador → ViaCEP / WhatsApp (sem passar pelo servidor)</text>
+  </g>
+  <text x="600" y="615" text-anchor="middle" font-size="12" fill="#6b5f7d">Modo simulado: sem servidor, o checkout e as faturas funcionam no navegador (demonstração do TCC). Modo real: Mercado Pago + banco.</text>
+</svg>

@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /painel.html
+Disallow: /checkout.html
+Sitemap: https://isaac18231.github.io/Site-fhp-tcc/sitemap.xml
